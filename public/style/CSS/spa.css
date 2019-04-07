@@ -1,0 +1,48 @@
+#spa {
+    padding: 80px 0 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#spa .spaPart {
+    width: 100%;
+    padding: 70px 0;
+    margin: 0;
+}
+
+#spa .spaImg, #spa .spaDesc {
+    width: 48%;
+}
+
+#spa .spaImg img {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #aaa;
+}
+
+#spa .spaDesc h3 {
+    color: #dc3545;
+    margin: 0 0 18px 0;
+    text-align: center;
+}
+
+#spa .spaDesc p {
+    color: #666;
+}
+
+#spa .resInfo {
+    text-align: left;
+}
+
+#spa .resInfo ul {
+    list-style-type: none;
+}
+
+#spa .resInfo ul li {
+    display: inline-block;
+}
+
+#spa .resInfo ul li h3 {
+    font-size: 18px;
+    color: #dc3545;
+}

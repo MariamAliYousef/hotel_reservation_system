@@ -1,0 +1,32 @@
+
+  #halls { padding: 100px 0 0px; overflow: hidden; text-align: center; }
+  
+  #halls .gallery {
+    margin-right: 1.5%;
+    margin-bottom: 120px;
+    width: 31.333333%;
+    float: left;
+    overflow: hidden;
+    margin-left: 1%;
+    box-shadow: 2px 2px 2px #ccc;
+    padding : 20px;
+    border-radius: 2px;
+  }
+  
+  #halls .gallery a img { width: 100%;}
+  
+  #halls .gallery .desc { color: #666; line-height: 1.3; margin: 25px auto 38px ; width: 90%; }
+  
+  #halls .gallery button { color: #dc3545; margin: auto; font-size: 18px; border: none; }
+
+  #halls .gallery  button a {
+    background-color: #fff;
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+    border-radius: 5px;
+  }
+
+  #halls .gallery button:hover a, #halls .gallery  button a:hover { background-color: #dc3545; color: #fff; }

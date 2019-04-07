@@ -1,0 +1,75 @@
+body { background-image: url(../images/booking/ban222.jpg); background-size: cover; overflow: hidden;}
+
+#booking { padding: 30px 0 5px; }
+
+#booking ul { text-align: center; }
+
+#booking ul li { display: inline-block; margin-right: 15px; }
+
+#booking ul li button { box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc; border: 1px solid #555; }
+
+.formRegister {
+    width: 36%;
+    margin: 60px auto 0;
+    box-shadow: 3px 3px 10px #444, -3px -3px 10px #444;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.formRegister #formTitle { width: 100%; text-align: center; color: #fff; }
+
+.formRegister .inputCont { padding: 5px 25px; margin-top: 15px; }
+
+.formRegister .inputCont label {
+    display: block;
+    color: #666;
+    text-align: left;
+    margin: 3px 0 0 0;
+    float: left;
+    width: 24%;
+}
+
+.formRegister .inputCont input, .formRegister .inputCont select {
+    display: block;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    color: #444;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #eee;
+    float: right;
+    width: 65%;
+}
+
+.formRegister .inputCont select, .formRegister input[type="date"] { padding: 3px 7px; margin: 0 40% 0 0; width: 25%; }
+
+.formRegister .submitButton { text-align: right; padding-right: 10%; }
+
+.formRegister .submitButton button {
+    color: #dc3545;
+    border: 2px solid #dc3545;
+    background-color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 30px auto;
+}
+
+.formRegister .submitButton button:hover { color: #fff; background-color: #dc3545; }
+
+.btn-danger { font-size: 13px !important }
+
+.formRegister #bookRest, .formRegister #bookHall {
+    display: none;
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+

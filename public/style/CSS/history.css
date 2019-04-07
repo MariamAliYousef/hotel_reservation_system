@@ -1,0 +1,36 @@
+#history .historySec {
+    overflow: hidden;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f5f5f5
+}
+
+#history h2 {
+    color: #dc3545;
+}
+
+#history .historySec p {
+    margin: auto;
+    width: 92%;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#history #historyImages {
+    overflow: hidden;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#history .historyIMG {
+    width: 30.2%;
+    float: left;
+    margin: 0 3% 6% 0;
+}
+
+#history .historyIMG img {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc, -1px -1px 1px #ccc;
+}

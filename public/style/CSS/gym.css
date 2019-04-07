@@ -1,0 +1,40 @@
+h2 { color: #dc3545; text-align: center; }
+
+#masstion {
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+#masstion p {
+    font-size: 18px;
+    color: #444;
+}
+
+#gymVideo { overflow: hidden; width: 100%;}
+
+#gymVideo video { display:block; width: 100%}
+
+#allClasses { padding: 100px 0 80px; }
+
+#allClasses .class {
+    width: 47.5%;
+    margin: 0;
+    padding: 0;
+    float: left;    
+    margin-bottom:30px;
+    text-align: center;
+}
+
+#allClasses .class h4 {
+    color: #dc3545;
+    margin: 50px auto 20px;
+}
+
+#allClasses .class img { 
+    width: 88%; 
+    padding: 1px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px #ccc;
+}

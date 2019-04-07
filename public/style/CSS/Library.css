@@ -1,0 +1,19 @@
+#library { padding: 80px 0 0; margin: 0; overflow: hidden; }
+
+#library .libraryPart { width: 100%; padding:  70px 0; margin: 0; }
+
+#library .libraryImg, #library .libraryDesc { width: 48%; }
+
+#library .libraryImg img { width: 100%; padding: 2px; border: 1px solid #aaa;}
+
+#library .libraryDesc h3 { color: #dc3545; margin: 0 0 18px 0; text-align: center;}
+
+#library .libraryDesc p { color: #666; }
+
+#library .resInfo { text-align: left; }
+
+#library .resInfo ul { list-style-type: none; }
+
+#library .resInfo ul li { display: inline-block; }
+
+#library .resInfo ul li h3 { font-size: 18px; color: #dc3545; }

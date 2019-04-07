@@ -12,15 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Welcome');
 });
 
+Auth::routes();
 
-Route::get('/home', 'PagesController@showForm');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/store_comment', 'PagesController@storeComment');
 Route::get('/show_comments', 'PagesController@showComments');
-
-
-
-
-

@@ -1,0 +1,33 @@
+#review { background-color: #fff; width: 100%; padding: 50px 10px; }
+
+#review h3 { color: #dc3545; text-align: center; }
+
+#review .reviewBox {
+    width: 80%;
+    margin: 0  auto 60px;
+    background-color: #f9f9f9;
+    box-shadow: 1px 1px 4px #bbb;
+    padding: 30px 30px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+}
+
+#review .reviewBox img {
+    display: block;
+    float: left;
+    width: 65px;
+    height: 65px;
+    margin: 0 20px 30px 0;
+    border: 1px solid #bbb;
+    padding: 2px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 6px #999;
+}
+
+#review .reviewBox .feedbackName { float: left; }
+
+#review .reviewBox .feedbackName h4 { color: #383838 }
+
+#review .reviewBox .feedbackName h6 { color: #999; }
+
+#review .reviewBox .reviewDesc { color: #555; text-align: center; }

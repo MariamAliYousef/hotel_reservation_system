@@ -1,0 +1,20 @@
+
+#golf { padding: 80px 0 0; margin: 0; overflow: hidden; }
+
+#golf .golfPart { width: 100%; padding: 70px 0; margin: 0; }
+
+#golf .golfImg, #golf .golfDesc { width: 48%; }
+
+#golf .golfImg img { width: 100%; padding: 2px; border: 1px solid #aaa;}
+
+#golf .golfDesc h3 { color: #dc3545; margin: 0 0 18px 0; text-align: center;}
+
+#golf .golfDesc p { color: #666; }
+
+#golf .resInfo { text-align: left; }
+
+#golf .resInfo ul { list-style-type: none; }
+
+#golf .resInfo ul li { display: inline-block; }
+
+#golf .resInfo ul li h3 { font-size: 18px; color: #dc3545;   }

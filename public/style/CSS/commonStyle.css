@@ -1,0 +1,217 @@
+/* Start Header Section */
+
+header {
+    overflow: hidden;
+}
+
+header span {
+    display: block;
+    height: 52px;
+}
+
+header nav {
+    box-shadow: 1px 1px 1px #222;
+    width: 100%;
+    z-index: 2;
+}
+
+header nav .navbar-brand {
+    float: left;
+    font-size: 24px;
+    color: #dc3545 !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+}
+
+header nav .navbar-nav {
+    list-style: none;
+    float: right!important;
+    overflow: hidden;
+}
+
+header nav .nav-item {
+    padding: 0 10px;
+}
+
+header nav .nav-link {
+    color: #fafafa !important;
+}
+
+header nav .nav-item:hover .nav-link {
+    color: #dc3545 !important;
+}
+
+header div[data-ride="carousel"] {
+    box-sizing: content-box !important;
+    height: 93vh !important;
+}
+
+header .carousel-item .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: max-content;
+    border-radius: 5px;
+    padding: 5px 40px 0;
+    bottom: 33% !important;
+    margin: auto;
+}
+
+header .carousel-control-prev, header .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+}
+
+.carousel-indicators li {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
+
+header .carousel-control-prev {
+    left: 10%;
+}
+
+header .carousel-control-next {
+    right: 10%;
+}
+
+/* End Header Section */
+
+
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+
+
+/* Start Footer Section*/
+
+#footer {
+    background-color: #222;
+    padding: 50px;
+    overflow: hidden;
+}
+
+#footer form {
+    overflow: hidden;
+}
+
+#footer form .form {
+    overflow: hidden;
+}
+
+#footer form .formData {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+#footer form label {
+    display: block;
+    color: #bbb;
+    font-weight: bold;
+}
+
+#footer form input[type="text"], #footer form input[type="email"], #footer form textarea {
+    width: 85%;
+    display: block;
+    padding: 10px;
+    border: 0;
+    border: 1px #151515 solid;
+    color: #888;
+    border-radius: 5px;
+    background-color: #292929;
+    margin: 5px 0 25px;
+}
+
+form input:focus {
+    background-color: #292929;
+}
+
+#footer form textarea {
+    border-radius: 5px;
+    min-height: 250px;
+    width: 95%;
+}
+
+#footer form #otherComment {
+    color: #fff;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 5px 10px;
+    float: left;
+}
+
+#footer form input[type="submit"] {
+    float: right;
+    margin-right: 44px;
+}
+
+/* End Footer Section */
+
+
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+
+
+/* framework */
+
+.clear {
+    clear: both;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    transition: all 0.5s;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.lines {
+    width: 200px;
+    margin: auto
+}
+
+.lines .firstLine {
+    height: 2px;
+    background-color: #bbb;
+    border: 0;
+    margin: 20px auto 2px;
+}
+
+.lines .secondLine {
+    width: 180px;
+    height: 2px;
+    background-color: #bbb;
+    border: 0;
+    margin: 2px auto 30px;
+}
+
+
+.subscribe { text-align: center; padding: 70px 0 0 ; }
+
+.subscribe p { text-align: center; color: #777; display: inline-block; }
+
+.subscribe button { color: #dc3545; display: inline-block; border: none; margin-left: 20px; background: none}
+  
+.subscribe button a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+    border-radius: 5px;
+  }
+  
+.subscribe button:hover a, .subscribe a:hover { background-color: #dc3545; color: #fff; }

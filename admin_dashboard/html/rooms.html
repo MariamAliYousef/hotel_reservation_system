@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="../css/admin_style.css"/>
+  </head>
+  <body>
+    <div class="header">
+      <div class="head-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Admin Dashboard</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="list-of-booking.html">List of Booking</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="rooms.html">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurant.html">Restaurant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="halls.html">Halls</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comments</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Add Room Button -->
+    <div class="add-room text-center" id="new-room">
+      <button class="btn btn-success">Add New Room</button>
+    </div>
+
+    <!-- Start List Booking Table Body -->
+    <div class="table-list">
+      <div class="container">
+        <div class="card">
+          <table>
+            <h5 class="card-header">
+              Rooms
+              <tr>
+                <th>Room Type</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Available</th>
+                <th>Options</th>
+              </tr>
+            </h5>
+            <div class="card-body">
+              <tr class="card-text">
+                <td>Single</td>
+                <td>1</td>
+                <td>50$</td>
+                <td>Yes</td>
+                <td>
+                  <button class="btn btn-danger">update</button>
+                  <button class="btn btn-primary">delete</button>
+                </td>
+              </tr>
+              <tr class="card-text">
+                <td>Single</td>
+                <td>2</td>
+                <td>80$</td>
+                <td>Yes</td>
+                <td>
+                  <button class="btn btn-danger">update</button>
+                  <button class="btn btn-primary">delete</button>
+                </td>
+              </tr>
+              <tr class="card-text">
+                <td>Double</td>
+                <td>1</td>
+                <td>90$</td>
+                <td>No</td>
+                <td>
+                  <button class="btn btn-danger">update</button>
+                  <button class="btn btn-primary">delete</button>
+                </td>
+              </tr>
+              <tr class="card-text">
+                <td>Double</td>
+                <td>2</td>
+                <td>100$</td>
+                <td>Yes</td>
+                <td>
+                  <button class="btn btn-danger">update</button>
+                  <button class="btn btn-primary">delete</button>
+                </td>
+              </tr>
+              <tr class="card-text">
+                <td>Triple</td>
+                <td>1</td>
+                <td>150$</td>
+                <td>No</td>
+                <td>
+                  <button class="btn btn-danger">update</button>
+                  <button class="btn btn-primary">delete</button>
+                </td>
+              </tr>
+            </div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
