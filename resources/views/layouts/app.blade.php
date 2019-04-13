@@ -14,6 +14,10 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/fontawesome-all.min.js') }}" defer></script>
+	<!--admin js------------------------------------------------------------------------>
+	<script src="{{ asset('admin/js/bootstrap.min.js') }}" defer></script>
+	<script src="{{ asset('admin/js/fontawesome-all.min.js') }}" defer></script>
+	<script src="{{ asset('admin/js/jquery-3.3.1.min.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -23,12 +27,17 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fontawesome-all.min.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('style/CSS/style.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('style/CSS/style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('style/CSS/fontawesome-all.min.css') }}"/>
-	  <link rel="stylesheet" href="{{ asset('style/CSS/bootstrap.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('style/CSS/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('style/CSS/commonStyle.css') }}" />
     <link rel="stylesheet" href="{{ asset('style/CSS/fontawesome-all.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('style/CSS/reviewFeedback.css') }}" />
+	<!--admin pages style---------------------------------------------------------------->
+	<link rel="stylesheet" href="{{ asset('admin/css/admin_style.css') }}" />
+	<link rel="stylesheet" href="{{ asset('admin/css/bootstrap.css') }}" />
+	<link rel="stylesheet" href="{{ asset('admin/css/fontawesome-all.min.css') }}" />
+	
 </head>
 
 <body>
@@ -56,10 +65,16 @@
                         <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                     </li>
                     @endif @else
-                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+					
+					
+					@if(Auth::user()->role == 1)
+					<li class="nav-item"><a href="{{ route('controll') }}" class="nav-link">controll</a></li>
+					@endif
+					
+                    <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="single_rooms.html" class="nav-link">Rooms</a></li>
                     <li class="nav-item"><a href="Restaurant.html" class="nav-link">Restaurant</a></li>
-                    <li class="nav-item"><a href="halls.html" class="nav-link">Halls</a></li>
+                    <li class="nav-item"><a href="halls" class="nav-link">Halls</a></li>
                     <li class="nav-item"><a href="GOLF.html" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="History.html" class="nav-link">History</a></li>
                     <li class="nav-item dropdown">

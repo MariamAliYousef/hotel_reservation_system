@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8"/>
-    <title>Admin</title>
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
-    <link rel="stylesheet" href="../css/fontawesome-all.min.css"/>
-    <link rel="stylesheet" href="../css/admin_style.css"/>
-  </head>
-  <body>
+@extends('layouts.app') @section('content')
+   
+
     <div class="header">
       <div class="head-nav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,7 +11,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="controll">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="list-of-booking.html">List of Booking</a>
@@ -31,15 +23,13 @@
                 <a class="nav-link" href="restaurant.html">Restaurant</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="halls.html">Halls</a>
+                <a class="nav-link" href="admin_halls">Halls</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Comments</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-            </form>
+         
           </div>
         </nav>
       </div>
@@ -73,13 +63,13 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../img/1.jpg" class="d-block w-100"/>
+                    <img src="{{ asset('admin/img/1.jpg') }}" class="d-block w-100"/>
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/2.jpg" class="d-block w-100"/>
+                    <img src="{{ asset('admin/img/2.jpg') }}" class="d-block w-100"/>
                   </div>
                   <div class="carousel-item">
-                    <img src="../img/3.jpg" class="d-block w-100"/>
+                    <img src="{{ asset('admin/img/3.jpg') }}" class="d-block w-100"/>
                   </div>
                 </div>
               </div>
@@ -89,9 +79,7 @@
       </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="../js/fontawesome-all.min.js"></script>
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-  </body>
-</html>
+
+
+
+@stop
