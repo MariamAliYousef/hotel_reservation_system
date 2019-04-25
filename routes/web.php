@@ -12,11 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('Welcome');
+    return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/store_comment', 'PagesController@storeComment');
-Route::get('/show_comments', 'PagesController@showComments');
+//Route::post('/store_comment', 'PagesController@storeComment');
+//Route::get('/show_comments', 'PagesController@showComments');
+//Route::get('/admin_pages/list-of-booking', 'HomeController@listBooking')->name('list-of-booking');
+//Route::post('/regist_room', 'bookRoomController@storeRoomBooking')->name('regist_room');
+Route::post('/regist_room', 'bookRoomController@storeRoomBooking');
+Route::get('/regist_room', 'bookRoomController@show')->name('regist_room');
