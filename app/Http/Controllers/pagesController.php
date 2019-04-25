@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\comment;
+use App\hall;
 use DB;
 
 class pagesController extends Controller
@@ -18,6 +19,14 @@ class pagesController extends Controller
 		$comments = DB::table('comments')->take(2)->get(); //to show only 2 comment
         return view('pages.home', compact('comments'));
     }
+	
+	
+	 public function showHalls()
+     {
+		
+		$halls = Hall::all();
+		return view('pages.halls', compact('halls'));
+     }
 	
 	
 	 public function storeComment(Request $request)

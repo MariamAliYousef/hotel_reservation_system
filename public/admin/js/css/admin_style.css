@@ -1,0 +1,12 @@
+.header {margin-bottom: 120px}
+.admin-home-body .total-body .first{float: left;}
+.admin-home-body .total-body .second{float: right;}
+.admin-home-body .total-body .second .carousel .carousel-inner .carousel-item{height: 350px;}
+.admin-home-body .total-body .second .carousel .carousel-inner .carousel-item img{height: 100%;}
+
+/* Tables Style */
+.table-list tr,td,th
+{border: 1px solid #EEE}
+
+/* Rooms Page */
+.add-room{margin-bottom: 30px}

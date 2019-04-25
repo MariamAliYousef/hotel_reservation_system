@@ -35,7 +35,7 @@
       <div class="container">
         <div class="room-intro">
           <h2>Rooms</h2>
-          <hr>
+          <hr style="margin:auto"/>
           <p>Our Hotel have three types of rooms, You can book one or more room<br> from the same or different type </p>
         </div>
         <div class="room-type">
@@ -67,7 +67,7 @@
       <div class="container">
         <div class="info">
           <h2>Restaurants & Halls</h2>
-          <hr/>
+          <hr style="margin:auto"/>
           <p>Our hotel have many largest and famous<br/> Restaurants & Halls</p>
         </div>
         <div class="rest">
@@ -97,7 +97,7 @@
       <div class="container">
         <div class="service-intro">
           <h2>Our Services</h2>
-          <hr/>
+          <hr style="margin:auto"/>
           <p>Our Hotel have three types of rooms, You can book one or more room<br> from the same or different type </p>
         </div>
         <div class="buttons">
@@ -126,7 +126,7 @@
       <div class="container">
         <div class="client-intro">
           <h3>Our Happy Clients</h3>
-          <hr/>
+          <hr style="margin:auto"/>
         </div>
 		
         <div class="comments">
