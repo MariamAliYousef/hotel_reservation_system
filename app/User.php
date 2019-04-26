@@ -36,8 +36,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function usersList(){
-      return $this->belongsTo(Reservation::class);
-    }
 }

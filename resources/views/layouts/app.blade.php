@@ -77,6 +77,7 @@
                     <li class="nav-item"><a href="halls" class="nav-link">Halls</a></li>
                     <li class="nav-item"><a href="GOLF.html" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="History.html" class="nav-link">History</a></li>
+					<li class="nav-item"><a href="payment" class="nav-link">Payment</a></li>
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
