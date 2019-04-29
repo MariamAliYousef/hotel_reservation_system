@@ -47,26 +47,104 @@
     </div>
 
     <!-- Start List Booking Table Body -->
-    <div class="table-list">
+    <div class="table-list" style="margin-bottom:50px">
       <div class="container">
         <div class="card">
           <table>
             <h5 class="card-header">
-              Booking List
+              Booking Rooms List
               <tr>
                 <th>ID</th>
-                <th>User Name</th>
+                <th>First Name</th>
+                <th>Last Name</th>
                 <th>Email</th>
-                <th>Booking Type</th>
+                <th>Room Type</th>
+                <th>Check In Date</th>
+                <th>Check Out Date</th>
               </tr>
             </h5>
-            @foreach($reservs as $reserv)
+            @foreach($book_room as $room)
             <div class="card-body">
               <tr class="card-text">
-                <td>{{ $reserv->id }}</td>
-                <td>{{ $reserv->user_id }}</td>
-                <td>{{ $reserv->email }}</td>
-                <td>{{ $reserv->bookingType }}</td>
+                <td>{{ $room->id }}</td>
+                <td>{{ $room->Fname }}</td>
+                <td>{{ $room->Lname }}</td>
+                <td>{{ $room->email }}</td>
+                <td>{{ $room->roomType }}</td>
+                <td>{{ $room->checkInDate }}</td>
+                <td>{{ $room->checkOutDate }}</td>
+              </tr>
+            </div>
+            @endforeach
+          </table>
+        </div>
+      </div>
+    </div>
+
+<!-- Booking Table List -->
+    <div class="table-list" style="margin-bottom:50px">
+      <div class="container">
+        <div class="card">
+          <table>
+            <h5 class="card-header">
+              Booking Table List
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Guests</th>
+                <th>Date</th>
+                <th>Time</th>
+              </tr>
+            </h5>
+            @foreach($book_table as $table)
+            <div class="card-body">
+              <tr class="card-text">
+                <td>{{ $table->id }}</td>
+                <td>{{ $table->FirstName }}</td>
+                <td>{{ $table->LastName }}</td>
+                <td>{{ $table->email }}</td>
+                <td>{{ $table->NumberOfGuests }}</td>
+                <td>{{ $table->Date }}</td>
+                <td>{{ $table->Time }}</td>
+              </tr>
+            </div>
+            @endforeach
+          </table>
+        </div>
+      </div>
+    </div>
+
+<!-- Booking Hall List -->
+    <div class="table-list" style="margin-bottom:50px">
+      <div class="container">
+        <div class="card">
+          <table>
+            <h5 class="card-header">
+              Booking Hall List
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Hall Type</th>
+                <th>Number of Guests</th>
+                <th>Check In Date</th>
+                <th>Check Out Date</th>
+              </tr>
+            </h5>
+            @foreach($book_hall as $hall)
+            <div class="card-body">
+              <tr class="card-text">
+                <td>{{ $hall->id }}</td>
+                <td>{{ $hall->f_name }}</td>
+                <td>{{ $hall->s_name }}</td>
+                <td>{{ $hall->email }}</td>
+                <td>{{ $hall->type }}</td>
+                <td>{{ $hall->persons_number }}</td>
+                <td>{{ $hall->checkInDate }}</td>
+                <td>{{ $hall->checkInTime }}</td>
               </tr>
             </div>
             @endforeach
