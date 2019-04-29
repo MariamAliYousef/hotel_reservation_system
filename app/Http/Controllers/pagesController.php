@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\comment;
 use App\hall;
 use DB;
+use App\registration;
 
 class pagesController extends Controller
 {
@@ -27,8 +28,14 @@ class pagesController extends Controller
 		$halls = Hall::all();
 		return view('pages.halls', compact('halls'));
      }
-	
-	
+    
+    public function showHalls2()
+     {
+		return view('halls');
+     }
+    
+    
+
 	 public function storeComment(Request $request)
      {
 		$comment = new Comment;   //comment =  model
@@ -50,4 +57,32 @@ class pagesController extends Controller
 		
 		return view('pages.show_comments',compact('comments'));
       }
+    
+    /*view the restaurants page*/
+     public function showRestaurants()
+     {
+		return view('Restaurant');
+     }
+    /*view the restaurants page*/
+     public function showRegister()
+     {
+		return view('register');
+     }
+    /*register table*/
+//    public function RegisterTable(Request $request)
+//     {
+//		$page = new registration;
+//        $page->FirstName=$request->FirstName;
+//        $page->LastName=$request->LastName;
+//        $page->email=$request->email;
+//        $page->NumberOfGuests=$request->numberOfGuest;
+//        $page->Date=$request->date;
+//        $page->Time=$request->time;    
+//        $page->save();
+//        
+//        return view('pages.doneRegister');
+//     }
+    public function showDoneReg(){
+        return view('pages.doneRegister');
+    }
 }

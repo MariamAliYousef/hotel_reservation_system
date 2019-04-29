@@ -73,8 +73,10 @@
 					
                     <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="single_rooms.html" class="nav-link">Rooms</a></li>
-                    <li class="nav-item"><a href="Restaurant.html" class="nav-link">Restaurant</a></li>
-                    <li class="nav-item"><a href="halls" class="nav-link">Halls</a></li>
+                    <li class="nav-item">
+                        <a href="{{url('restaurants')}}" class="nav-link">Restaurant</a>
+                    </li>
+                    <li class="nav-item"><a href="{{url('hallss')}}" class="nav-link">Halls</a></li>
                     <li class="nav-item"><a href="GOLF.html" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="History.html" class="nav-link">History</a></li>
 					<li class="nav-item"><a href="payment" class="nav-link">Payment</a></li>
@@ -100,7 +102,7 @@
     </div>
     </nav>
 
-    <main class="py-4">
+    <main>
         @yield('content')
     </main>
     </div>

@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/store_comment', 'PagesController@storeComment');
 Route::get('/show_comments', 'PagesController@showComments');
 Route::get('/halls', 'PagesController@showHalls');
-
+Route::get('/restaurants','pagesController@showRestaurants');
 
 
 Route::get('/controll', 'adminController@showAdminPage')->name('controll');
@@ -40,3 +40,17 @@ Route::get('/regist_room', 'bookRoomController@show')->name('regist_room');
 Route::get('/payment', 'paymentController@showPaymentForm');
 Route::post('/storePayment', 'paymentController@store_payment');
 
+//reserve a table
+Route::get('/register','pagesController@showRegister');
+Route::post('register_table', 'reserveController@registerTable');
+Route::get('/donetable', function () {
+    return view('pages.doneTable');
+});
+
+//reserve hall
+Route::get('/hallss', 'PagesController@showHalls2');
+Route::get('/halls_reg', 'pagesController@showRegister');
+Route::post('hall_Store', 'reserveController@hallStore');
+Route::get('/done_reg_hall', function () {
+    return view('pages.doneHall');
+});
