@@ -43,19 +43,19 @@
             <img src="{{ asset('style/images/rooms-images/room2.jpg') }}"/>
             <h2>Single</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            <button><a href="#">view Rooms</a></button>
+            <button><a href="single_room">view Rooms</a></button>
           </div>
           <div class="types">
             <img src="{{ asset('style/images/rooms-images/room4.jpg') }}"/>
             <h2>Double</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            <button><a href="#">view Rooms</a></button>
+            <button><a href="double_room">view Rooms</a></button>
           </div>
           <div class="types">
             <img src="{{ asset('style/images/rooms-images/room8.jpg') }}"/>
             <h2>Triple</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            <button><a href="#">view Rooms</a></button>
+            <button><a href="triple_room">view Rooms</a></button>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
           <div>
             <h3>Restaurants</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut non cupidatat skateboard dolor brunch.</p>
-            <button><a href="#">GO<i class="fas fa-angle-double-right"></i></a></button>
+            <button><a href="resturant">GO<i class="fas fa-angle-double-right"></i></a></button>
           </div>
           <div>
             <img src="{{ asset('style/images/restaurants-images/rest1.jpg') }}"/>
@@ -85,7 +85,7 @@
           <div>
             <h3>Halls</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut non cupidatat skateboard dolor brunch.</p>
-            <button><a href="#">GO<i class="fas fa-angle-double-right"></i></a></button>
+            <button><a href="halls">GO<i class="fas fa-angle-double-right"></i></a></button>
           </div>
         </div>
       </div>
@@ -101,11 +101,10 @@
           <p>Our Hotel have three types of rooms, You can book one or more room<br> from the same or different type </p>
         </div>
         <div class="buttons">
-          <button class="my-button"><a href="#">All Services</a></button>
-          <button class="my-button"><a href="#">GYM</a></button>
-          <button class="my-button"><a href="#">SPA</a></button>
-          <button class="my-button"><a href="#">Library</a></button>
-          <button class="my-button"><a href="#">Golf</a></button>
+          <button class="my-button"><a href="gym">GYM</a></button>
+          <button class="my-button"><a href="other_serv">SPA</a></button>
+          <button class="my-button"><a href="other_serv">Library</a></button>
+          <button class="my-button"><a href="golf">Golf</a></button>
         </div>
         <div class="ser-images">
           <img src="{{ asset('style/images/services-images/gym/gym1.jpeg') }}"/>
@@ -122,20 +121,33 @@
     <!-- End Services Section -->
     <!-- ******************************************************************* -->
     <!-- Start Our Happy Client Section-->
-    <div class="our-client">
-      <div class="container">
-        <div class="client-intro">
-          <h3>Our Happy Clients</h3>
-          <hr style="margin:auto"/>
-        </div>
-		
-        <div class="comments">
-			@foreach ($comments as $oneComment)
-          <div>
-			  <p> {{ $oneComment->comment }} </p>
-            <h3>{{ $oneComment->username }}, {{ $oneComment->subject }}</h3>
-          </div>
+
+          <div id="review">
+        <div class="container">
+            <h3> Our Clients' Feedbacks </h3>
+            <div class="lines">
+                <hr class="firstLine" />
+                <hr class="secondLine" />
+            </div>
+            <br />
+           @foreach ($comments as $oneComment)
+            <div class="reviewBox">
+                <img src="{{ asset('style/images/52c66f1f8b.png') }}" />
+                <div class="feedbackName">
+                    <h4 class="clientName"> {{ $oneComment->username }} </h4>
+                    <h6 class="reviewSubject"> {{ $oneComment->subject }} </h6>
+                </div>
+                <div class="clear"> </div>
+                <div class="reviewDesc">
+                    <q> {{ $oneComment->comment }} </q>
+                </div>
+            </div>
 			@endforeach
+        </div>
+    </div>
+         <div class="our-client">
+      <div class="container">
+        <div class="comments">
 		  <div class="click">
 			  <a href="show_comments"><button> <i class="fas fa-angle-double-left"> </i>View all our Clients comments <i class="fas fa-angle-double-right"> </i></button> </a>
 		 </div>

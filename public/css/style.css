@@ -326,13 +326,13 @@ body{margin: 0}
 .res-img1 img{width:800px;height:400px;padding-top: 45px;padding-left: 30px;}
 .restaurant-sec1 button{color: #f77cad;border-radius: 15px;
   margin: 20px 0 40px 30px;width:200px;
-  padding: 10px 20px;
+  height: 67px;padding: 10px 20px;
   background-color: #fff;border: 2px solid #f77cad;
   font-size: 20px;font-family: Tahoma;
 }
 .restaurant-sec1 button a{text-decoration: none;color: #f77cad}
 .restaurant-sec1 button:hover,.restaurant-sec1 button:hover a{background-color: #f77cad;color: #fff;}
-div.polaroid {width: 360px;padding: 20px;margin-top: 150px;
+div.polaroid {width: 284px;padding: 20px;margin-top: 150px;
   border: 2px solid #75c6cf;background-color: white;
   box-shadow: 10px 10px 5px #aaaaaa;
 }
@@ -340,21 +340,20 @@ div.polaroid img,div.pola img{width: 284px;height: 213px;}
 div.rotate_right {float: left;
   -ms-transform: rotate(7deg);
   -webkit-transform: rotate(7deg);
-  transform: rotate(7deg);
-  margin-left: 200px;
+  transform: rotate(7deg);margin-left: 300px;
 }
 div.rotate_left {float: left;
   -ms-transform: rotate(-7deg);
   -webkit-transform: rotate(-7deg);
   transform: rotate(-7deg);
 }
-div.pola {width: 364px;padding: 20px;margin-top: 150px;border: 2px solid #75c6cf;
+div.pola {width: 284px;padding: 20px;margin-top: 150px;border: 2px solid #75c6cf;
   background-color: white;box-shadow: 10px 10px 5px #aaaaaa;
 }
 div.rotate_right1 {float: left;
   -ms-transform: rotate(7deg);
   -webkit-transform: rotate(7deg);
-  transform: rotate(7deg);margin-left: 200px;
+  transform: rotate(7deg);margin-left: 300px;
 }
 div.rotate_left1 {float: left;
   -ms-transform: rotate(-7deg);
@@ -534,7 +533,7 @@ div.rotate_left1 {float: left;
   padding: 8px;margin-top: 20px;margin-bottom: 20px;
   font-size: 14px;border: 1px solid #E7E7E7;float: center;
 }
-.button button{float:center;width: 20%;height: 60px;margin-bottom: 80px;margin-top: 50px;}
+.button{float:center;width: 20%;height: 60px;margin-bottom: 80px;margin-top: 50px;}
 .button input[type="submit"]{outline:none;padding:20px;width:100%;
 	text-transform:uppercase;font-size:18px;color:#75c6cf;
 	background:#fff;border:1px solid #75c6cf;cursor:pointer;

@@ -10,23 +10,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="controll">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="controll">Home </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="list-of-booking.html">List of Booking</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="rooms.html">Rooms</a>
+                <a class="nav-link" href="admin_rooms">Rooms</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="restaurant.html">Restaurant</a>
+                <a class="nav-link" href="admin_meals">Restaurant</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="admin_halls">Halls</a>
+                <a class="nav-link" href="admin_halls">Halls <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Comments</a>
-              </li>
+
             </ul>
             
           </div>
@@ -72,7 +70,7 @@
 
 
 
-
+    <br><br>
     <!-- Start List Booking Table Body -->
     <div class="table-list">
       <div class="container">
@@ -96,7 +94,7 @@
                 <td>{{ $hall->type }}</td>
                 <td>{{ $hall->persons_number }}</td>
                 <td>{{ $hall->price }}$</td>
-				<td><img <img src="admin/upload images/{{ $hall->image }}" width="100px" height="100"></td>  
+				<td><img src="admin/upload images/{{ $hall->image }}" width="100px" height="100"></td>  
 				  
                 
                 <td>

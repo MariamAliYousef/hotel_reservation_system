@@ -14,10 +14,12 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/fontawesome-all.min.js') }}" defer></script>
+	<script src="{{ asset('js/spa&library.js') }}" defer></script>
 	<!--admin js------------------------------------------------------------------------>
 	<script src="{{ asset('admin/js/bootstrap.min.js') }}" defer></script>
 	<script src="{{ asset('admin/js/fontawesome-all.min.js') }}" defer></script>
 	<script src="{{ asset('admin/js/jquery-3.3.1.min.js') }}" defer></script>
+	
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -72,14 +74,48 @@
 					@endif
 					
                     <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="single_rooms.html" class="nav-link">Rooms</a></li>
-                    <li class="nav-item">
-                        <a href="{{url('restaurants')}}" class="nav-link">Restaurant</a>
-                    </li>
-                    <li class="nav-item"><a href="{{url('hallss')}}" class="nav-link">Halls</a></li>
-                    <li class="nav-item"><a href="GOLF.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="History.html" class="nav-link">History</a></li>
+   
+						<li class="nav-item dropdown"> 
+					    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Rooms <span class="caret"></span>
+                        </a>
+						 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="single_room">
+                                        Single
+                            </a>
+							<a class="dropdown-item" href="double_room">
+                                        Double
+                            </a>
+							<a class="dropdown-item" href="triple_room">
+                                        Triple
+                            </a> 
+
+                    <li class="nav-item"><a href="resturant" class="nav-link">Restaurant</a></li>
+                    <li class="nav-item"><a href="halls" class="nav-link">Halls</a></li>
+							 
+							 							 
+							 
+					<li class="nav-item dropdown"> 
+					    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Services <span class="caret"></span>
+                        </a>
+						 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="golf">
+                                        Golf
+                            </a>
+							<a class="dropdown-item" href="gym">
+                                        Gym
+                            </a>
+							<a class="dropdown-item" href="other_serv">
+                                        Other Services
+                            </a> 	 
+							 
+					
+
 					<li class="nav-item"><a href="payment" class="nav-link">Payment</a></li>
+							 
+					
+					
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -102,7 +138,7 @@
     </div>
     </nav>
 
-    <main>
+    <main class="py-4">
         @yield('content')
     </main>
     </div>

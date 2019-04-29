@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-					Your bank balance is not enough :(
+					Your bank balance is not enough :( 
                 </div>
 
             </div>

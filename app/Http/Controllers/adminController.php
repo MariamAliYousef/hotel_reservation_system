@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\hall;
+use App\room;
+use App\meal;
 use DB;
 
 class adminController extends Controller
@@ -18,7 +20,24 @@ class adminController extends Controller
         return view('admin_pages.controll');
     }
 	
-	/*add the new post to database*/
+	
+	
+    public function showAdminRooms()
+    {   
+		$rooms = Room::all();
+        return view('admin_pages.rooms_controll', compact('rooms'));
+    }
+	
+	
+	
+    public function showAdminMeals()
+    {
+		$meals = Meal::all();
+        return view('admin_pages.meals_controll', compact('meals'));
+    }	
+	
+	
+	/*add the new hall to database*/
 	public function showAdminHalls()
     {
 		$halls = Hall::all();
@@ -26,10 +45,16 @@ class adminController extends Controller
     }
 	
 	
+	
+	
+	
 	public function hall_edit(hall $hall_id)
     {
 		return view('admin_pages.edit_hall',compact('hall_id'));
     }
+	
+	
+	
 	
 	
 	public function hall_update(Request $request,Hall $hall_id){

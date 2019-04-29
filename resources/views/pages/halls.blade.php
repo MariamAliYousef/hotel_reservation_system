@@ -28,7 +28,7 @@
   		          
 				  <P>max no of persons : {{ $hall->persons_number }}       
 		    </pre>
-  			<a href="register.html"><button>book now</button></a>
+  			<a href="halls_reg"><button>book now</button></a>
   		</div>
   		<div class="img"><img src="admin/upload images/{{ $hall->image }}"></div>
   	</div>

@@ -17,17 +17,15 @@
                 <a class="nav-link" href="list-of-booking.html">List of Booking</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="rooms.html">Rooms</a>
+                <a class="nav-link" href="admin_rooms">Rooms</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="restaurant.html">Restaurant</a>
+                <a class="nav-link" href="admin_meals">Restaurant</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="admin_halls">Halls</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Comments</a>
-              </li>
+
             </ul>
          
           </div>

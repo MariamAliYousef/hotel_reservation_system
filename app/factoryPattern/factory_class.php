@@ -20,4 +20,7 @@ class factory_class {
 	  return $amount;
   }
 
+
+
+
 }

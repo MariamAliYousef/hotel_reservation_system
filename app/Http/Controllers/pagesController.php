@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\comment;
 use App\hall;
+use App\room;
+use App\meal;
 use DB;
-use App\registration;
 
 class pagesController extends Controller
 {
@@ -22,20 +23,71 @@ class pagesController extends Controller
     }
 	
 	
-	 public function showHalls()
+	
+	public function showGolf()
+     {
+
+		return view('pages.golf');
+     }
+	
+	
+	
+	public function showGym()
+     {
+
+		return view('pages.gym');
+     }
+	
+	
+	
+	public function showOtherServ()
+     {
+		
+		return view('pages.other_serv');
+     }
+	
+	
+	
+	public function showHalls()
      {
 		
 		$halls = Hall::all();
 		return view('pages.halls', compact('halls'));
      }
-    
-    public function showHalls2()
+	
+	
+	
+	
+	 public function showTripleRooms()
      {
-		return view('halls');
+		$rooms = Room::all();
+		return view('pages.triple_room', compact('rooms'));
      }
-    
-    
-
+	
+	
+	
+	 public function showDoubleRooms()
+     {
+		$rooms = Room::all();
+		return view('pages.double_room', compact('rooms'));
+     }
+	
+	
+	 public function showSingleRooms()
+     {
+		$rooms = Room::all();
+		return view('pages.single_room', compact('rooms'));
+     }
+	
+	
+	 public function showResturant()
+     {
+		$meals = Meal::all();
+		return view('pages.resturant', compact('meals'));
+     }
+	
+	
+	
 	 public function storeComment(Request $request)
      {
 		$comment = new Comment;   //comment =  model
@@ -57,32 +109,24 @@ class pagesController extends Controller
 		
 		return view('pages.show_comments',compact('comments'));
       }
-    
-    /*view the restaurants page*/
-     public function showRestaurants()
+	
+	
+	
+	/*view the restaurants page*/
+     public function showHallForm()
      {
-		return view('Restaurant');
+		return view('regist_hall');
      }
-    /*view the restaurants page*/
-     public function showRegister()
+	
+	
+	 public function showTableForm()
      {
-		return view('register');
+		return view('regist_table');
      }
-    /*register table*/
-//    public function RegisterTable(Request $request)
-//     {
-//		$page = new registration;
-//        $page->FirstName=$request->FirstName;
-//        $page->LastName=$request->LastName;
-//        $page->email=$request->email;
-//        $page->NumberOfGuests=$request->numberOfGuest;
-//        $page->Date=$request->date;
-//        $page->Time=$request->time;    
-//        $page->save();
-//        
-//        return view('pages.doneRegister');
-//     }
-    public function showDoneReg(){
+	
+	
+	public function showDoneReg()
+	{
         return view('pages.doneRegister');
     }
 }
