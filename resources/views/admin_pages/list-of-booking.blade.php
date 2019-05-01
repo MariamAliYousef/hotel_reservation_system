@@ -20,27 +20,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="controll">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('list-of-booking') }}">List of Booking <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin_rooms">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin_meals">Restaurant </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="list-of-booking.html">List of Booking</a>
+                <a class="nav-link" href="admin_halls">Halls</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="rooms.html">Rooms</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="restaurant.html">Restaurant</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="halls.html">Halls</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Comments</a>
-              </li>
+
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-            </form>
           </div>
         </nav>
       </div>

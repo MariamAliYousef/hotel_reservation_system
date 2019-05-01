@@ -13,7 +13,7 @@
                 <a class="nav-link" href="controll">Home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="list-of-booking.html">List of Booking</a>
+                <a class="nav-link" href="{{ route('list-of-booking') }}">List of Booking</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="admin_rooms">Rooms <span class="sr-only">(current)</span></a>

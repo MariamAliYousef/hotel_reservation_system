@@ -45,22 +45,6 @@ class paymentController extends Controller
 		$tax = $factory_class->payment();
     }
 	  
-	 // Withdraw balance
-	// $credit = DB::table('credit_cards')->where('card_number', request('visa_number'))->get(); 
-	// $visa_amount = $credit->amount_of_money;
-	// $price = request('amount') + $tax; 
-	  
-	 //if($visa_amount >= $price){
-		 
-    // $new_palance = $visa_amount - $price;		 
-	// $data = ['amount_of_money'=>$new_palance];
-	 
-		 
-	// DB::table('credit_cards')->where('card_number', request('visa_number'))->update($data);	 
-	 //}
-	//return view('pages.donePayment', compact('tax'));
-
-   //}
 	
 	$credit = DB::table('credit_cards')->where('card_number', request('visa_number'));
     $visa_amount = $credit->value('amount_of_money');

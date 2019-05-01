@@ -29,8 +29,8 @@ Route::get('/golf', 'PagesController@showGolf');
 Route::get('/gym', 'PagesController@showGym');
 Route::get('/other_serv', 'PagesController@showOtherServ');
 
-Route::get('/list-of-booking', 'adminController@listBooking')->name('list-of-booking');
 
+Route::get('/list-of-booking', 'adminController@listBooking')->name('list-of-booking');
 Route::get('/controll', 'adminController@showAdminPage')->name('controll');
 
 // Halls (admin)
@@ -48,7 +48,7 @@ Route::get('/room/{room_id}/edit', 'roomsController@room_edit');
 Route::put('/room/{room_id}/update', 'roomsController@room_update');
 Route::get('/room/{room_id}/delete', 'roomsController@room_delete');
 
-//meals (admin)
+//meals (admin) 
 Route::get('/admin_meals', 'adminController@showAdminMeals');
 Route::post('/meals-store', 'mealsController@meal_Store');
 Route::get('/meal/{meal_id}/edit', 'mealsController@meal_edit');
